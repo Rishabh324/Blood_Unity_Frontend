@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lora:ital,wght@1,400;1,600&family=Raleway:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    font-family: 'Kanit', sans-serif;
+}
+
+.form-banner img{
+    height: 100vh;
+    width: 90%;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.loader{
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-bottom-color: #805cff;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.table-head-row{
+    font-weight: bold;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-link, .navbar-brand{
+    color: white !important;
+}
+
+/* Layout - Sidebar */
+
+.sidebar{
+    height: 100vh !important;
+    background-color: #2e3200;
+    box-shadow: 0 0 2px grey;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.menu{
+    padding-top: 100px;
+}
+
+.menu-item{
+    padding: 20px 15px;
+}
+
+.menu-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-item i{
+    font-size: 1.2rem;
+    margin: 0 15px;
+    color: white;
+}
+
+.active{
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.active a,.active i{
+    color: #2e3200;
+}

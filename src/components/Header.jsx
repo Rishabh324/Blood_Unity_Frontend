@@ -1,9 +1,9 @@
 import React from 'react'
-import { MdBloodtype } from 'react-icons/md';
 import { useSelector } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Logo from "../img/logo-nobkg.png";
+// import { MdBloodtype } from 'react-icons/md';
 const Header = () => {
     const { user } = useSelector(state => state.auth);
     const navigate = useNavigate();

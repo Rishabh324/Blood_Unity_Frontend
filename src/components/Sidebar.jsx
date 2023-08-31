@@ -80,40 +80,6 @@ const Sidebar = () => {
                             </>
                         )
                     }
-                    {/* {
-                        user?.role === "Hospital" && (
-                            <>
-                                <div className={`menu-item ${location.pathname === "/" && 'active'}`} >
-                                    <i className="menu-icon fa-solid fa-warehouse"></i>
-                                    <Link to="/">Inventory</Link>
-                                </div>
-                                <div className={`menu-item ${location.pathname === "/donor" && 'active'}`}>
-                                    <i className="menu-icon fa-solid fa-hand-holding-medical"></i>
-                                    <Link to="/donor">Donor</Link>
-                                </div>
-                                <div className={`menu-item ${location.pathname === "/organisation" && 'active'}`}>
-                                    <i className="menu-icon fa-solid fa-building-ngo"></i>
-                                    <Link to="/organisation">Organisations</Link>
-                                </div>
-                            </>
-                        )
-                    } */}
-                    {/* <div className={`menu-item ${location.pathname === "/" && 'active'}`} >
-                        <i className="menu-icon fa-solid fa-warehouse"></i>
-                        <Link to="/">Inventory</Link>
-                    </div>
-                    <div className={`menu-item ${location.pathname === "/donor" && 'active'}`}>
-                        <i className="menu-icon fa-solid fa-hand-holding-medical"></i>
-                        <Link to="/donor">Donor</Link>
-                    </div>
-                    <div className={`menu-item ${location.pathname === "/hospital" && 'active'}`}>
-                        <i className="menu-icon fa-solid fa-hospital"></i>
-                        <Link to="/hospital">Hospitals</Link>
-                    </div>
-                    <div className={`menu-item ${location.pathname === "/organisation" && 'active'}`}>
-                        <i className="menu-icon fa-solid fa-building-ngo"></i>
-                        <Link to="/organisation">Organisations</Link>
-                    </div> */}
                 </div>
             </div>
         </div>

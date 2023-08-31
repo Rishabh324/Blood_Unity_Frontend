@@ -15,7 +15,6 @@ const Consumer = () => {
                     inventoryType: "OUT",
                 }
             });
-            console.log(data);
             if (data?.status == "success") {
                 setData(data?.inventory);
             }

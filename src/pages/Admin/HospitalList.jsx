@@ -24,7 +24,6 @@ const HospitalList = () => {
   const getHospitalList = async () => {
     try {
       const { data } = await API.get('/admin/hospital-list');
-      console.log(data);
       if (data?.status == "success") {
         setHospitalList(data?.hospitalData);
       }

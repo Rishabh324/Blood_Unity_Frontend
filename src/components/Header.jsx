@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Logo from "../img/logo-nobkg.png";
-// import { MdBloodtype } from 'react-icons/md';
 const Header = () => {
     const { user } = useSelector(state => state.auth);
     const navigate = useNavigate();
@@ -18,7 +17,6 @@ const Header = () => {
         <div className='header'>
             <nav className='navbar bg-dark'>
                 <div className='container-fluid mx-4'>
-                    {/* <div className='navbar-brand'><MdBloodtype color='red' size='2rem' /> Blood Unity</div> */}
                     <div className='navbar-brand'><img className='me-2' src={Logo} width="80px" height="70px"></img> Blood Unity</div>
                     <ul className='navbar-nav flex-row align-items-center'>
                         <li className='nav-item mx-3'>

@@ -8,7 +8,6 @@ const DonorList = () => {
   const getDonorList = async () => {
     try {
       const { data } = await API.get('/admin/donor-list');
-      console.log(data);
       if (data?.status == "success") {
         setDonorList(data?.donorData);
       }

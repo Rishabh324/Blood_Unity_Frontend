@@ -24,7 +24,6 @@ const OrganisationList = () => {
     const getOrganisationList = async () => {
         try {
             const { data } = await API.get('/admin/organisation-list');
-            console.log(data);
             if (data?.status == "success") {
                 setOrganisationList(data?.organisationData);
             }

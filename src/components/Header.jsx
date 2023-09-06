@@ -18,7 +18,7 @@ const Header = () => {
             <nav className='navbar bg-dark'>
                 <div className='container-fluid mx-4'>
                     <div className='navbar-brand'><img className='me-2' src={Logo} width="80px" height="70px"></img> Blood Unity</div>
-                    <ul className='navbar-nav flex-row align-items-center justify-space-between'>
+                    <ul className='navbar-nav flex-row align-items-center'>
                         <li className='nav-item mx-3'>
                             <p className='nav-link mt-2' style={{ fontSize: "1.2rem" }}>Welcome {user?.name || user?.hospitalName || user?.organisationName} &nbsp;
                                 <span className="badge bg-secondary">{user?.role}</span>

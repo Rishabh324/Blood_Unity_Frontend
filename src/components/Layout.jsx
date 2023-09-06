@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 
 const Layout = ({ children }) => {
     return (
-        <div style={{ overflow: "hidden", height: "100vh" }}>
+        <div style={{ height: "100vh" }}>
             <div className='header'>
                 <Header />
             </div>

@@ -65,9 +65,9 @@
 
 .sidebar{
     height: 100vh !important;
-    background-color: #2e3200;
+    background-color: #EDEDED;
     box-shadow: 0 0 2px grey;
-    color: white;
+    color: black;
     /* font-weight: bold; */
 }
 
@@ -80,7 +80,7 @@
 }
 
 .menu-item a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -88,16 +88,16 @@
 .menu-item i{
     font-size: 1.2rem;
     margin: 0 15px;
-    color: white;
+    color: black;
 }
 
 .active{
-    background-color: white;
+    background-color: #53BAC1;
     padding: 20px 30px;
 }
 
 .active a,.active i{
-    color: #2e3200;
+    color: white;
 }
 
 /* Responsive */
@@ -116,6 +116,7 @@
 
     .form-container form{
         margin-right: 0!important;
+        padding-left: 100px;
     }
 
     .form-container{
@@ -127,14 +128,16 @@
     .form-banner{
         text-align: center;
         margin: auto;
+        width: fit-content;
     }
     .form-banner img{
         height: 35vh;
-        width: 40%;
+        width: 90%;
         border-radius: 50%;
     }
 
     .form-container{
         margin-top: 1rem;
+        padding-right: 100px;
     }
 }

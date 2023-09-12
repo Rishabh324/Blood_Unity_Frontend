@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import Logo from "../img/logo-nobkg.png";
+import Logo from "../img/logo_new.png";
 const Header = () => {
     const { user } = useSelector(state => state.auth);
     const navigate = useNavigate();
@@ -15,9 +15,9 @@ const Header = () => {
     }
     return (
         <div className='header'>
-            <nav className='navbar bg-dark'>
+            <nav className='navbar' style={{ backgroundColor: "#53BAC1" }}>
                 <div className='container-fluid mx-4'>
-                    <div className='navbar-brand'><img className='me-2' src={Logo} width="80px" height="70px"></img> Blood Unity</div>
+                    <div className='navbar-brand' onClick={() => navigate('/')}><img className='me-2' src={Logo} width="250px" style={{ paddingTop: "10px", cursor: "pointer" }}></img></div>
                     <ul className='navbar-nav flex-row align-items-center'>
                         <li className='nav-item mx-3'>
                             <p className='nav-link mt-2' style={{ fontSize: "1.2rem" }}>Welcome {user?.name || user?.hospitalName || user?.organisationName} &nbsp;
@@ -49,7 +49,7 @@ const Header = () => {
                             )
                         }
                         <li className='nav-item mx-3'>
-                            <button className='btn btn-danger' onClick={logoutHandler}>
+                            <button className='btn' style={{ backgroundColor: "#194F92", color: "white", borderRadius: "25px 25px 25px 25px" }} onClick={logoutHandler}>
                                 Logout
                             </button>
                         </li>

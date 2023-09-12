@@ -35,7 +35,7 @@ const Home = () => {
                     <Spinner />
                 ) : (
                     <div className='home container'>
-                        <p className='ms-3 mt-4' style={{ cursor: 'pointer', borderRadius: "15px", backgroundColor: "#FF0000", padding: "10px", width: "max-content", color: "white" }} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <p className='ms-3 mt-4' style={{ cursor: 'pointer', borderRadius: "25px 25px 25px 25px", backgroundColor: "#194F92", padding: "10px", width: "max-content", color: "white" }} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <i className="fa-solid fa-plus me-2" />Add Inventory
                         </p>
                         <Modal />
